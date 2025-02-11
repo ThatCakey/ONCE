@@ -1,2 +1,2 @@
 # ONCE
-Opensource Nonlinear Composoting &amp; Editing
+Opensource Nonlinear Compositing &amp; Editing
