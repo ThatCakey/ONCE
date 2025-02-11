@@ -10,13 +10,13 @@
     <Grid>
         <!--  Define Rows & Columns  -->
         <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" /> 
+            <RowDefinition Height="60*" MinHeight="50" />
+            <RowDefinition Height="Auto" />
             <!--  GridSplitter Row  -->
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" /> 
+            <RowDefinition Height="*" MinHeight="50" />
+            <RowDefinition Height="Auto" />
             <!--  GridSplitter Row  -->
-            <RowDefinition Height="*" />
+            <RowDefinition Height="40*" MinHeight="50" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -28,13 +28,19 @@
             Grid.Row="0"
             Grid.Column="0"
             Background="LightGray">
-            <Grid ColumnDefinitions="*,Auto,*,Auto,*">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="45*" MinWidth="50" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" MinWidth="50" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="55*" MinWidth="50" />
+                </Grid.ColumnDefinitions>
                 <!--  Left Column  -->
                 <Border
                     Grid.Column="0"
                     Margin="1"
-                    Background="LightGray"
-                    >
+                    Background="LightGray">
                     <TextBlock
                         HorizontalAlignment="Center"
                         VerticalAlignment="Center"
@@ -50,8 +56,7 @@
                 <Border
                     Grid.Column="2"
                     Margin="1"
-                    Background="LightBlue"
-                    >
+                    Background="LightBlue">
                     <TextBlock
                         HorizontalAlignment="Center"
                         VerticalAlignment="Center"
@@ -67,8 +72,7 @@
                 <Border
                     Grid.Column="4"
                     Margin="1"
-                    Background="LightCoral"
-                    >
+                    Background="LightCoral">
                     <TextBlock
                         HorizontalAlignment="Center"
                         VerticalAlignment="Center"
