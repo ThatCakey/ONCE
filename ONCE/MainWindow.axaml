@@ -1,0 +1,115 @@
+<Window
+    x:Class="ONCE.MainWindow"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ONCE"
+    MinWidth="400"
+    MinHeight="300"
+    Background="#282428">
+
+    <Grid>
+        <!--  Define Rows & Columns  -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" /> 
+            <!--  GridSplitter Row  -->
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" /> 
+            <!--  GridSplitter Row  -->
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!--  Add Elements inside Borders to Show Background  -->
+        <Border
+            Grid.Row="0"
+            Grid.Column="0"
+            Background="LightGray">
+            <Grid ColumnDefinitions="*,Auto,*,Auto,*">
+                <!--  Left Column  -->
+                <Border
+                    Grid.Column="0"
+                    Margin="1"
+                    Background="LightGray"
+                    >
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Left" />
+                </Border>
+                <!--  Vertical Splitter  -->
+                <GridSplitter
+                    Grid.Column="1"
+                    Width="5"
+                    Background="DarkGray"
+                    ResizeDirection="Columns" />
+                <!--  Middle Column  -->
+                <Border
+                    Grid.Column="2"
+                    Margin="1"
+                    Background="LightBlue"
+                    >
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Middle" />
+                </Border>
+                <!--  Vertical Splitter  -->
+                <GridSplitter
+                    Grid.Column="3"
+                    Width="5"
+                    Background="DarkGray"
+                    ResizeDirection="Columns" />
+                <!--  Right Column  -->
+                <Border
+                    Grid.Column="4"
+                    Margin="1"
+                    Background="LightCoral"
+                    >
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Right" />
+                </Border>
+            </Grid>
+        </Border>
+        <Border
+            Grid.Row="2"
+            Grid.Column="0"
+            Background="LightGray">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Text="Middle Right" />
+        </Border>
+        <Border
+            Grid.Row="4"
+            Grid.Column="0"
+            Background="LightGray">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Text="Bottom Right" />
+        </Border>
+
+        <!--  Row GridSplitters  -->
+        <GridSplitter
+            Grid.Row="1"
+            Grid.ColumnSpan="3"
+            Height="5"
+            Background="DarkGray"
+            ResizeDirection="Rows" />
+        <GridSplitter
+            Grid.Row="3"
+            Grid.ColumnSpan="3"
+            Height="5"
+            Background="DarkGray"
+            ResizeDirection="Rows" />
+
+        <!--  Column GridSplitter  -->
+        <!--  GridSplitter Grid.Column="1" Grid.RowSpan="5" Width="5" Background="DarkGray" ResizeDirection="Columns"/  -->
+    </Grid>
+</Window>
