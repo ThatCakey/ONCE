@@ -7,16 +7,17 @@
     MinHeight="300"
     Background="#282428">
 
-    <Grid>
+<Grid RowDefinitions="2*,98*">
+    <Grid Grid.Row="1">
         <!--  Define Rows & Columns  -->
         <Grid.RowDefinitions>
             <RowDefinition Height="60*" MinHeight="50" />
             <RowDefinition Height="Auto" />
             <!--  GridSplitter Row  -->
-            <RowDefinition Height="*" MinHeight="50" />
+            <RowDefinition Height="*" MinHeight="25"/>
             <RowDefinition Height="Auto" />
             <!--  GridSplitter Row  -->
-            <RowDefinition Height="40*" MinHeight="50" />
+            <RowDefinition Height="40*" MinHeight="50"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -30,9 +31,9 @@
             Background="LightGray">
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="45*" MinWidth="50" />
+                    <ColumnDefinition Width="25*" MinWidth="50" />
                     <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition Width="*" MinWidth="50" />
+                    <ColumnDefinition Width="20*" MinWidth="50" />
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="55*" MinWidth="50" />
                 </Grid.ColumnDefinitions>
@@ -44,12 +45,12 @@
                     <TextBlock
                         HorizontalAlignment="Center"
                         VerticalAlignment="Center"
-                        Text="Left" />
+                        Text="Toolspace 1" />
                 </Border>
                 <!--  Vertical Splitter  -->
                 <GridSplitter
                     Grid.Column="1"
-                    Width="5"
+                    Width="2"
                     Background="DarkGray"
                     ResizeDirection="Columns" />
                 <!--  Middle Column  -->
@@ -60,12 +61,12 @@
                     <TextBlock
                         HorizontalAlignment="Center"
                         VerticalAlignment="Center"
-                        Text="Middle" />
+                        Text="Toolspace 2" />
                 </Border>
                 <!--  Vertical Splitter  -->
                 <GridSplitter
                     Grid.Column="3"
-                    Width="5"
+                    Width="2"
                     Background="DarkGray"
                     ResizeDirection="Columns" />
                 <!--  Right Column  -->
@@ -76,7 +77,7 @@
                     <TextBlock
                         HorizontalAlignment="Center"
                         VerticalAlignment="Center"
-                        Text="Right" />
+                        Text="Viewport" />
                 </Border>
             </Grid>
         </Border>
@@ -87,33 +88,82 @@
             <TextBlock
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                Text="Middle Right" />
+                Text="scenes" />
+
         </Border>
         <Border
             Grid.Row="4"
             Grid.Column="0"
             Background="LightGray">
-            <TextBlock
-                HorizontalAlignment="Center"
-                VerticalAlignment="Center"
-                Text="Bottom Right" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20*" MinWidth="50" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="70*" MinWidth="50" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="10*" MinWidth="50" />
+                </Grid.ColumnDefinitions>
+                <!--  Left Column  -->
+                <Border
+                    Grid.Column="0"
+                    Margin="1"
+                    Background="LightGray">
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Properties" />
+                </Border>
+                <!--  Vertical Splitter  -->
+                <GridSplitter
+                    Grid.Column="1"
+                    Width="2"
+                    Background="DarkGray"
+                    ResizeDirection="Columns" />
+                <!--  Middle Column  -->
+                <Border
+                    Grid.Column="2"
+                    Margin="1"
+                    Background="LightBlue">
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Tracks" />
+                </Border>
+                <!--  Vertical Splitter  -->
+                <GridSplitter
+                    Grid.Column="3"
+                    Width="2"
+                    Background="DarkGray"
+                    ResizeDirection="Columns" />
+                <!--  Right Column  -->
+                <Border
+                    Grid.Column="4"
+                    Margin="1"
+                    Background="LightCoral">
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Volume" />
+                </Border>
+            </Grid>
         </Border>
 
         <!--  Row GridSplitters  -->
         <GridSplitter
             Grid.Row="1"
             Grid.ColumnSpan="3"
-            Height="5"
+            Height="2"
             Background="DarkGray"
             ResizeDirection="Rows" />
         <GridSplitter
             Grid.Row="3"
             Grid.ColumnSpan="3"
-            Height="5"
+            Height="2"
             Background="DarkGray"
             ResizeDirection="Rows" />
 
         <!--  Column GridSplitter  -->
         <!--  GridSplitter Grid.Column="1" Grid.RowSpan="5" Width="5" Background="DarkGray" ResizeDirection="Columns"/  -->
     </Grid>
+</Grid>
 </Window>
