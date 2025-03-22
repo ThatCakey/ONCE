@@ -74,10 +74,8 @@
                     Grid.Column="4"
                     Margin="1"
                     Background="LightCoral">
-                    <TextBlock
-                        HorizontalAlignment="Center"
-                        VerticalAlignment="Center"
-                        Text="Viewport" />
+                    <Image Name="Viewport" Margin="10" Stretch="Uniform" 
+                        Source="avares://ONCE/Assets/Images/linux.png"/>
                 </Border>
             </Grid>
         </Border>

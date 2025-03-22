@@ -65,3 +65,5 @@
 /home/cakey/Documents/Projects/Once/ONCE/ONCE/obj/Debug/net9.0/ONCE.csproj.Up2Date
 /home/cakey/Documents/Projects/Once/ONCE/ONCE/obj/Debug/net9.0/ONCE.genruntimeconfig.cache
 /home/cakey/Documents/Projects/Once/ONCE/ONCE/obj/Debug/net9.0/ref/ONCE.dll
+/home/cakey/Documents/Projects/Once/ONCE/ONCE/bin/Debug/net9.0/SixLabors.ImageSharp.dll
+/home/cakey/Documents/Projects/Once/ONCE/ONCE/bin/Debug/net9.0/Assets/Images/linux.png

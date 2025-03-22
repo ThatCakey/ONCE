@@ -444,6 +444,22 @@
           "lib/net5.0/MicroCom.Runtime.dll": {}
         }
       },
+      "SixLabors.ImageSharp/3.1.7": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SixLabors.ImageSharp.props": {}
+        }
+      },
       "SkiaSharp/2.88.8": {
         "type": "package",
         "dependencies": {
@@ -1197,6 +1213,22 @@
         "microcom.runtime.nuspec"
       ]
     },
+    "SixLabors.ImageSharp/3.1.7": {
+      "sha512": "9fIOOAsyLFid6qKypM2Iy0Z3Q9yoanV8VoYAHtI2sYGMNKzhvRTjgFDHonIiVe+ANtxIxM6SuqUzj0r91nItpA==",
+      "type": "package",
+      "path": "sixlabors.imagesharp/3.1.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/SixLabors.ImageSharp.props",
+        "lib/net6.0/SixLabors.ImageSharp.dll",
+        "lib/net6.0/SixLabors.ImageSharp.xml",
+        "sixlabors.imagesharp.128.png",
+        "sixlabors.imagesharp.3.1.7.nupkg.sha512",
+        "sixlabors.imagesharp.nuspec"
+      ]
+    },
     "SkiaSharp/2.88.8": {
       "sha512": "bRkp3uKp5ZI8gXYQT57uKwil1uobb2p8c69n7v5evlB/2JNcMAXVcw9DZAP5Ig3WSvgzGm2YSn27UVeOi05NlA==",
       "type": "package",
@@ -1422,7 +1454,8 @@
       "Avalonia.Desktop >= 11.2.1",
       "Avalonia.Diagnostics >= 11.2.1",
       "Avalonia.Fonts.Inter >= 11.2.1",
-      "Avalonia.Themes.Fluent >= 11.2.1"
+      "Avalonia.Themes.Fluent >= 11.2.1",
+      "SixLabors.ImageSharp >= 3.1.7"
     ]
   },
   "packageFolders": {
@@ -1462,7 +1495,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -1487,6 +1520,10 @@
           "Avalonia.Themes.Fluent": {
             "target": "Package",
             "version": "[11.2.1, )"
+          },
+          "SixLabors.ImageSharp": {
+            "target": "Package",
+            "version": "[3.1.7, )"
           }
         },
         "imports": [
@@ -1505,7 +1542,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
